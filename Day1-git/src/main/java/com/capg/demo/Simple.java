@@ -12,6 +12,8 @@ public class Simple {
 		System.out.println("print method");
 		System.out.println("print method11");
 		System.out.println("print method122");
+		System.out.println("print method122");
+		System.out.println("print method122");
 
 		
 	}
