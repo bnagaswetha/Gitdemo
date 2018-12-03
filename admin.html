@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="navbar.css" rel="stylesheet" type="text/css">
+        <link href="body.css" rel="stylesheet" type="text/css">
+        <style>
+            body{
+               background-image: url("adminbackground.jpg")
+            }
+            </style>
+    </head>
+    <body>
+        <ul class="normal">
+        <li><h1 style="color:white"><b>Welcome To Exam Portal</b></h1></li>
+        </ul>
+        <ul>
+            <li><a href="index.html"><b>HomePage</b></a></li>
+			<li><a href="admin.html"><b>Admin</b></a></li>
+            <li><a href="user.html"><b>User</b></a></li>
+			<li><a href="register.html"><b>Register</b></a></li>
+           
+        </ul>
+        <br>
+        <br>
+        <form action="adlogin.php" method="post" id="sendemail">
+            <center>
+            <h2 style="color:white">ADMIN LOGIN</h2>
+            <fieldset style="width:500px;height:290px"><br><br><br><br>
+                <label for="name" style="color:white">Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <input id="name" name="userid" class="text" /><br><br><br>
+              <label for="name" style="color:white">Password</label>&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="password" id="name" name="pass" class="text" /><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="submit" name="submit" value="login" />
+                  <div class="clr"></div>
+                 </fieldset>
+            </center>
+              
+        </form>
+        
+    
+        
+    </body>
+</html>

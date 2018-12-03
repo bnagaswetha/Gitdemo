@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="navbar.css" rel="stylesheet" type="text/css">
+        <link href="body.css" rel="stylesheet" type="text/css">
+        <style>
+            body{
+               background-image: url("userbackground.jpg")
+            }
+            </style>
+    </head>
+    <body>
+        <ul class="normal">
+        <li><h1 style="color:white"><b>Welcome To Exam Portal</b></h1></li>
+        </ul>
+        <ul>
+            <li><a href="index.html"><b>HomePage</b></a></li>
+           <li><a href="admin.html"><b>Admin</b></a></li>
+            <li><a href="user.html"><b>User</b></a></li>
+            <li><a href="register.html"><b>Register</b></a></li>
+        </ul>
+        <br>
+        <br>
+        <br>
+    <center>
+        <br>
+        <br>
+        <h2 style="color:whitesmoke">USER LOGIN</h2><br>
+         <fieldset style="background-color: gainsboro;width:500px;height:200px;"><br><br>
+        <form action="signup.php" method="post" id="sendemail">
+           
+             
+                <label for="name" style="color: black"><b>Name<b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="name" name="userid" class="text" style="background-color:transparent"/><br><br><br>
+                  <label for="name" style="color:black"><b>Password</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="password" id="name" name="pass" class="text" style="background-color:transparent"/><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 
+                  <input type="submit" name="submit" value="login" />
+                  
+            
+            </form>
+      <form action="ForgetPassword.php" method="get">
+             <input type="submit" value="Forget Password??"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        </fieldset>
+        </center>
+    </body>
+</html>

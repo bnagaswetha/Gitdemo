@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>REGISTER PAGE</title>
+        <link href="navbar.css" rel="stylesheet" type="text/css">
+        <link href="body.css" rel="stylesheet" type="text/css">
+        <style>
+            body{
+               background-image: url("registerbackground.jpg");
+               background-size: 100%;
+               background-repeat: no-repeat;
+            }
+            </style>
+            
+    </head>
+    <body>
+        <div>
+            
+        </div>
+        <ul class="normal">
+        <li><h1 style="color:white"><b>Welcome To Exam Portal</b></h1></li>
+        </ul>
+        <ul>
+            <li><a href="index.html"><b>HomePage</b></a></li>
+           <li><a href="admin.html"><b>Admin</b></a></li>
+            <li><a href="user.html"><b>User</b></a></li>
+            <li><a href="register.html"><b>Register</b></a></li>
+        </ul>
+        
+        
+            <center>
+                <h2 style="color:whitesmoke"><b>REGISTER</b></h2>
+                <fieldset style="width: 500px;height: 800px;background-color:white; " ><br>
+              
+              
+          <form action="register1.php" method="post"  enctype="multipart/form-data">
+           
+              
+              <label for="name"><b>Name</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="name" name="userid" class="text" /><br><br><br>
+              
+              <label for="name"><b>Roll No</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="rno1" name="rno" class="text" /><br><br><br>
+              
+                            <label for="name"><b>Password</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="password" id="name1" name="pass" class="text" /><br><br><br>
+                            
+                            
+             <label for="name"><b>confirm Password</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="password" id="name2" name="pass1" class="text" /><br><br><br>
+              
+                            <label for="email"><b>Email</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="email" name="email" class="text" /><br><br><br>
+             
+              
+                            <label for="name"><b>Mobile</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="website" name="mobile" class="text" /><br><br><br>
+             
+			 
+                            
+                            <select name="secret">
+                                <option value="1">What is your nationality</option>
+                                 <option value="2">10th school name</option>
+                                
+                            </select><br/><br/>
+               <label for="message"><b>Answer</b></label><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <textarea id="answer" name="answer" rows="1" cols="50"></textarea><br><br><br>
+                 <button type="submit" onclick="return Validate()">Sign Up</button>
+                <div class="clr"></div>
+                </fieldset>
+                 
+          
+          </form>
+            </center>
+                    
+         <script type="text/javascript">
+    function Validate() {
+        var password = document.getElementById("name1").value;
+        var confirmPassword = document.getElementById("name2").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+    }
+    </script>
+    </body>
+</html>
